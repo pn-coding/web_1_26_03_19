@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .box{
+            width: 800px;
+            height: 600px;
+            border-width: 5px;
+            border-color: black;
+            border-style: solid;
+            font-size: 50px;
+            text-align: center;
+            line-height: 600px;
+
+            /* background-color: #00f; */
+            /* =>hex(16진수) 표현 */
+
+            /* background-color: rgb(255, 255, 0); */
+            /* =>rgb 색상 표현 */
+
+            background-color: rgba(255, 0, 0, 0.5);
+            /* =>rgb + a 불투명도까지 표현 */
+
+            background-image: url(https://www.alleycat.org/wp-content/uploads/2019/03/FELV-cat.jpg);
+            /* =>배경 이미지 불러옴 
+            =>배경 이미지는 엘리먼트에 크기가 지정되어야 배경 이미지가 표현됨 
+            =>배경 이미지는 기본적으로 반복함 */
+            
+            background-repeat: no-repeat;
+            /* =>배경반복 안함 */
+
+            background-size: 200px 300px;
+            /* =>배경 이미지 사이즈 조절 
+            =>값을 하나만 넣게 되면 가로 세로 비율대로 이미지 크기 조절됨
+            =>띄어쓰기로 구분하여 첫번째 값은 x(가로) 두번째값은 y(세로) */
+
+            /* background-size: cover; */
+            /* =>이미지 크기를 가득 채워주나, 이미지 비율에 따라 잘려보일 수 있음 */
+
+            /* background-size: contain; */
+            /* =>이미지 비율에 맞춰 채워 주지만 특정 부분이 비어있을 수 있음 */
+
+            /* background-position: 100px 0; */
+            /* =>배경이미지 위치 조절
+            =>size와 동일하게 x, y 값으로 위치 지정 가능 */
+
+            background-position: right bottom;
+            /* =>left,right,bottom,top,center로 위치 조절 가능 */
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="box">텍스트</div>
+
+</body>
+</html>
