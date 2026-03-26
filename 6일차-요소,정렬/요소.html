@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /* *요소(Element)
+        1.block
+        =>지정한 크기값에 맞춰서 엘리먼트 크기가 지정됨 
+        =>알수없는 여백값이 없음 
+        =>기본적으로 가로값이 가득차있음(눈에 안보이는 여백)
+        =>div, p, h1-h6, ul, li 등
+
+        2.inline
+        =>크기를 지정해도 적용되지 않음 
+        =>알수없는 여백값이 있음 
+        =>a, b, i, strong, b, u 등 */
+
+
+        .block{
+            width: 200px;
+            height: 200px;
+            background-color: cornflowerblue;
+            font-size: 30px;
+            text-align: center;
+            line-height: 200px;
+            /* *border 축약
+            =>border: 두께 선종류 선색상
+            =>한줄로 띄어쓰기로 구분함 */
+            border: 10px solid #000;
+            display: inline;
+        }
+
+        a{
+            width: 200px;
+            height: 200px;
+            background-color: gold;
+            font-size: 30px;
+            text-align: center;
+            line-height: 200px;
+            border: 10px solid salmon;
+            display: block;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="block">블럭 요소</div>
+    <div class="block">블럭 요소</div>
+
+    <a href="#">인라인 요소</a>
+    <a href="#">인라인 요소</a>
+
+</body>
+</html>
