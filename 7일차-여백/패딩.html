@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* =>기본값에 포함 */
+        }
+
+        body{
+            height: 300vh;
+        }
+
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: lightgray;
+            /* padding: 100px; */
+            /* =>지정한 값 만큼 엘리먼트 바깥으로 확장됨 */
+
+            /* padding-top: 50px;
+            padding-bottom: 100px;
+            padding-left: 150px;
+            padding-right: 60px; */
+            /* =>원하는 방향으로 패딩값 처리 가능 */
+
+            /* padding: 50px 60px 100px 150px; */
+            /* =>패딩 축약 */
+
+            padding: 100px 70px;
+            /* =>패딩 위아래, 양옆 값이 같으면 2개로 축약 가능  */
+        }
+
+        .box_2{
+            width: 300px;
+            height: 300px;
+            background-color: gold;
+            padding: 100px;
+            box-sizing: border-box;
+            /* =>패딩이나, 테두리를 엘리먼트에 지정한 크기를 안쪽으로 포함시킴  */
+        }
+
+        .box_3{
+            width: 300px;
+            height: 300px;
+            background-color: cornflowerblue;
+            border: 10px solid black;
+            box-sizing: border-box;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="box">패딩</div>
+
+    <div class="box_2">패딩 안으로</div>
+
+    <div class="box_3">테두리</div>
+
+</body>
+</html>
