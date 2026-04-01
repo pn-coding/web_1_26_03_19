@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul{
+            width: 200px;
+            height: 700px;
+            border: 3px solid black;
+            list-style: none;
+            box-sizing: unset;
+            /* =>박스사이징을 적용하고 싶지 않을때 */
+        }
+
+        li{
+            height: 100px;
+            background-color: gray;
+            border: 1px solid red;
+            font-size: 50px;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        /* *구조 선택자
+        =>부모안에 자식들 중 원하는 자식 엘리먼트를 선택할때 사용 
+        =>:nth-child(숫자) 원하는 번째의 자식을 선택 할 수 있음
+        =>:first-child 첫번째 자식을 선택 할 수 있음
+        =>:last-child 마지막 자식을 선택 할 수 있음 */
+
+        li:nth-child(2){
+            background-color: salmon;
+        }
+
+        li:first-child{
+            background-color: gold;
+        }
+
+        li:last-child{
+            background-color: teal;
+        }
+
+        li:nth-child(1){
+            background-color: red;
+        }
+
+        li:nth-child(2){
+            background-color: orange;
+        }
+
+        li:nth-child(3){
+            background-color: yellow;
+        }
+
+        li:nth-child(4){
+            background-color: green;
+        }
+
+        li:nth-child(5){
+            background-color: blue;
+        }
+
+        li:nth-child(6){
+            background-color: navy;
+        }
+
+        li:nth-child(7){
+            background-color: purple;
+        }
+
+        /* *자식선택자
+        =>부모 > 자식 
+        =>부모 안에 있는 자식 하나를 콕집어서 선택함  */
+
+        /* li:nth-child(2) > a{
+            color: white;
+        }
+
+        li:nth-child(5) > a{
+            color: white;
+        } */
+
+        /* *다중선택 
+        =>콤마로 구분하여 여러 선택자를 선택할때 사용 
+        =>선택자, 선택자, 선택자 {
+            ...
+        } */
+
+        /* li:nth-child(2) > a,
+        li:nth-child(5) > a{
+            color: aqua;
+        } */
+
+        /* *자손 선택자
+        =>부모 안의 자식 의 자식 혹은 자식을 선택 할때 사용 
+        =>띄어쓰기로 구분하여 사용함 
+        =>부모 자식{
+            ...
+        } */
+
+        ul a{
+            color: red;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+    <ul>
+        <li>1</li>
+        <li>
+            <a href="#">
+                <div>
+                    <b>2</b>
+                </div>
+            </a>
+        </li>
+        <li>3</li>
+        <li>4</li>
+        <li><a href="#">5</a></li>
+        <li>6</li>
+        <li>7</li>
+    </ul>
+    
+</body>
+</html>
