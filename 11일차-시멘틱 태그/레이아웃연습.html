@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul,li{
+            list-style: none;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+        .header{
+            height: 80px;
+            /* background-color: lightblue; */
+            padding: 0 150px;
+        }        
+
+        .logo{
+            font-size: 26px;
+            font-weight: 900;
+            line-height: 80px;
+            float: left;
+        }
+
+        .menu_wrap{
+            float: right;
+        }
+
+        .menu_wrap li{
+            font-size: 18px;
+            font-weight: 900;
+            float: left;
+            line-height: 80px;
+            margin-left: 100px;
+        }
+
+        .menu_wrap li:hover{
+            text-decoration: underline;
+            color: salmon;
+        }
+
+        .menu_wrap a:hover{
+            color: salmon;
+        }
+        /* header end */
+
+        .section_1{
+            height: 900px;
+            background-color: lightgray;
+            padding: 250px 150px;
+            font-size: 60px;
+            font-weight: 900;
+        }
+        /* section_1 end */
+
+
+        .section_2{
+            height: 800px;
+            padding: 150px;
+        }
+
+        .section_2 h2{
+            font-size: 36px;
+            font-weight: 900;
+            margin-bottom: 30px;
+        }
+
+        .con_wrap{
+            /* background-color: lightblue; */
+            height: 500px;
+        }
+
+        .con{
+            width: 32%;
+            height: 500px;
+            background-color: lightgray;
+            float: left;
+            margin-right: 30px;
+        }
+
+        .con:last-child{
+            margin-right: 0;
+        }
+        /* section_2 end */
+
+        .section_3{
+            height: 600px;
+            background-color: lightgray;
+            font-size: 80px;
+            text-align: center;
+            line-height: 600px;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="wrap">
+
+        <div class="header">
+
+            <div class="logo">
+                <a href="#">LOGO</a>
+            </div>
+
+            <ul class="menu_wrap">
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Menu</a></li>
+            </ul>
+            
+        </div>
+        <!-- header end -->
+
+        <div class="section_1">
+            <h1>Hero Section Title</h1>
+        </div>
+        <!-- section_1 end -->
+
+        <div class="section_2">
+
+            <h2>Section2 title</h2>
+
+            <div class="con_wrap">
+                <div class="con"></div>
+                <div class="con"></div>
+                <div class="con"></div>
+            </div>
+
+        </div>
+        <!-- section_2 end -->
+
+        <div class="section_3">
+            <h2>Section3 title</h2>
+        </div>
+        <!-- section_3 end -->
+
+    </div>
+    <!-- wrap end -->
+
+</body>
+</html>
