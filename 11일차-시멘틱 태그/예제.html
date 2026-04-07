@@ -4,8 +4,180 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul,li{
+            list-style: none;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+        header{
+            height: 160px;
+            padding: 0 250px;
+        }
+
+        .logo{
+            font-size: 26px;
+            font-weight: 900;
+            text-align: center;
+            line-height: 80px;
+        }
+
+        .menu_wrap{
+            width: 520px;
+            height: 80px;
+            font-size: 18px;
+            font-weight: 900;
+            margin: 0 auto;
+        }
+
+        .menu_wrap li{
+            float: left;
+            margin-right: 100px;
+            line-height: 80px;
+        }
+
+        .menu_wrap li:last-child{
+            margin-right: 0;
+        }
+
+        /* header end */
+
+        .section_1{
+            height: 800px;
+            background-color: lightgray;
+            text-align: center;
+            line-height: 800px;
+            font-weight: 900;
+            font-size: 70px;
+        }
+        /* section_1 end */
+
+        .section_2{
+            height: 1200px;
+            padding: 150px 250px;
+        }
+
+        .section_2 h3{
+            font-weight: 900;
+            font-size: 48px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .container{
+            height: 800px;
+            width: 49%;
+            margin-right: 2%;
+            float: left;
+        }
+
+        .container:last-child{
+            margin-right: 0;
+        }
+
+        .con{
+            height: 385px;
+            padding: 30px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .con:nth-child(1){
+            margin-bottom: 30px;
+            background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20230611/pngtree-apple-windows-xp-wallpaper-image_2910301.jpg);
+        }
+
+        .con:nth-child(2){
+            background-image: url(https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148901163.jpg?semt=ais_hybrid&w=740&q=80);
+        }
+
+        .container:nth-child(1){
+            background-image: url(https://img.freepik.com/free-photo/3d-render-coastal-landscape-sunset-sky_1048-5670.jpg?semt=ais_hybrid&w=740&q=80);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 30px;
+        }
+
+        .section_2 .con_title{
+            font-size: 28px;
+            font-weight: 500;
+            text-align: left;
+        }
+
+        /* 
+        선택자 우선순위 
+        1. id, 자손, 자식, 구조 
+        2. class,
+        3. tag 
+        */
+
+    </style>
+
 </head>
 <body>
+
+    <div class="wrap">
+
+        <header>
+
+            <div class="logo">
+                <a href="#">LOGO</a>
+            </div>
+
+            <ul class="menu_wrap">
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">MENU</a></li>
+            </ul>
+
+        </header>
+        
+        <section class="section_1">
+            <h1>Hero Section</h1>
+        </section>
+
+        <section class="section_2">
+
+            <h3>Section title</h3>
+
+            <div class="con_wrap">
+
+                <!-- 왼쪽 컨테이너 -->
+                <div class="container">
+                    <h3 class="con_title">컨텐츠 타이틀</h3>
+                </div>
+
+                <!-- 오른쪽 컨테이너 -->
+                <div class="container">
+                    <div class="con">
+                        <h3 class="con_title">컨텐츠 타이틀</h3>
+                    </div>
+
+                    <div class="con">
+                        <h3 class="con_title">컨텐츠 타이틀</h3>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
     
 </body>
 </html>
