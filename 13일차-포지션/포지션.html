@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box{
+            width: 300px;
+            height: 300px;
+            font-size: 50px;
+            text-align: center;
+            line-height: 300px;
+            position: relative;
+        }
+
+        .box:nth-child(1){
+            background-color: crimson;
+            top: 0;
+            right: 100px;
+            /* z-index: 5; */
+            /* =>엘리먼트 앞뒤 순서를 바꿀때 사용함
+            =>단위가 따로 없으며 엘리먼트의 순서 숫자를 입력함 
+            =>반드시 포지션이 있어야 적용 됨 */
+        }
+
+        .box:nth-child(2){
+            background-color: lightseagreen;
+            top: 150px;
+            left: 150px;
+            /* z-index: 4; */
+        }
+
+        .box:nth-child(3){
+            background-color: royalblue;
+            top: 300px;
+            left: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <!-- *포지션
+    =>포지션을 적용하게 되면 엘리먼트가 뜨게 됨, 브라우저 좌측 상단 기준으로 
+    원하는 위치에 값을 지정하여 엘리먼트 위치를 옮길 수 있음
+    =>절대값: absolute 브라우저 좌측 상단이 기준
+    =>상대값: relative 엘리먼트 자신의 좌측 상단이 기준 
+    
+    *포지션 사용시 주의사항 
+    =>기본 레이아웃 구성할땐 블럭요소로 레이아웃 구성할것
+    =>디자인이 겹치거나 애니메이션 및 반응형 등 특별한 경우에만 포지션을 사용할것
+    =>포지션을 모르고 강제로 사용하면 결국 레이아웃을 무너짐 
+    -->
+
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+
+</body>
+</html>

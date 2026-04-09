@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+        body{
+            height: 3000px;
+        }
+
+        header{
+            width: 100%;
+            /* =>절대값을 적용시 가로값이 없으면 블럭 요소의 기본 여백값이 사라짐, 
+            즉 절대값을 사용할땐 가로값을 꼭 넣을것 */
+            height: 80px;
+            background-color: lightgray;
+            font-size: 50px;
+            position: fixed;
+            /* =>절대값
+            =>엘리먼트가 좌표값 지정한곳에 고정됨  */
+            
+            top: 0;
+            left: 0;
+        }
+
+        section{
+            width: 1000px;
+            height: 600px;
+            background-color: gray;
+            font-size: 50px;
+        }
+
+        .con{
+            width: 300px;
+            height: 500px;
+            background-color: salmon;
+            font-size: 50px;
+        }
+
+        .top_btn{
+            width: 100px;
+            height: 100px;
+            border: 1px solid #808080;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 100px;
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>고정</header>
+    <section>섹션</section>
+    <div class="con">컨텐츠</div>
+
+    <div class="top_btn">
+        <a href="#">TOP</a>
+    </div>
+    
+</body>
+</html>
